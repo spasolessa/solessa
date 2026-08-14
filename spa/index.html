@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es" style="color-scheme:light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Solessa Spa · Estética y bienestar en Barranquilla</title>
+<meta name="description" content="Tecnología estética de alta gama y rituales de bienestar en Barranquilla. HIFEM Sculpt, radiofrecuencia, hidrafacial, drenaje linfático y más.">
+<meta name="theme-color" content="#F0E9DD">
+<meta name="color-scheme" content="light">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://wa.me">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+<!-- Open Graph (preview pequeño tipo WhatsApp) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Solessa Spa">
+<meta property="og:title" content="Solessa Spa · Estética y bienestar en Barranquilla">
+<meta property="og:description" content="Tecnología estética de alta gama y rituales de bienestar. HIFEM Sculpt y más.">
+<meta property="og:url" content="https://solessaspa.com/">
+<meta property="og:image" content="https://solessaspa.com/assets/img/og.png">
+<meta property="og:image:width" content="240">
+<meta property="og:image:height" content="240">
+<meta property="og:locale" content="es_CO">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Solessa Spa · Barranquilla">
+<meta name="twitter:description" content="Estética avanzada y bienestar. HIFEM Sculpt y más.">
+<meta name="twitter:image" content="https://solessaspa.com/assets/img/og.png">
+
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css?v=2">
+</head>
+<body>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<!-- SPLASH -->
+<div class="splash" id="splash" aria-hidden="true">
+  <img src="assets/img/mark-s.png" alt="" width="150" height="294" class="splash__logo">
+</div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav__in">
+    <a class="brand" href="#inicio" aria-label="Solessa Spa — inicio" translate="no">
+      <img src="assets/img/logo-spa.png" alt="Solessa Spa" width="132" height="54">
+    </a>
+    <div class="switch" role="group" aria-label="Cambiar de mundo Solessa" translate="no">
+      <a class="switch__opt" data-config-href="worldBronceado" href="#">Bronceado</a>
+      <span class="switch__opt is-active" aria-current="page">Spa</span>
+    </div>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#tratamientos">Tratamientos</a>
+      <a href="#hifem">HIFEM Sculpt</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn--wa nav__cta" data-wa href="#" aria-label="Escríbenos por WhatsApp">
+      <svg class="ico" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l4.9-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.8.8-1 1.9-.7 3.1.4 1.5 1.4 2.9 1.6 3.1.2.2 2.7 4.2 6.6 5.5 2.4.8 3 .6 3.6.6.6-.1 1.8-.8 2-1.5.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.5-.3Z"/></svg>
+      <span>Reservar</span>
+    </a>
+    <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE DRAWER -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <nav class="drawer__nav" aria-label="Menú móvil">
+    <div class="switch switch--drawer" role="group" aria-label="Cambiar de mundo Solessa" translate="no">
+      <a class="switch__opt" data-config-href="worldBronceado" href="#">Bronceado</a>
+      <span class="switch__opt is-active" aria-current="page">Spa</span>
+    </div>
+    <a href="#tratamientos">Tratamientos</a>
+    <a href="#hifem">HIFEM Sculpt</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#contacto">Contacto</a>
+    <a class="btn btn--wa" data-wa href="#">Reservar por WhatsApp</a>
+  </nav>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="seal" aria-hidden="true">
+      <img src="assets/img/sun.png" alt="" width="400" height="414">
+    </div>
+    <div class="wrap hero__grid">
+      <div class="hero__copy" data-reveal>
+        <p class="eyebrow">Solessa Spa · Villa Campestre, Barranquilla</p>
+        <h1 class="hero__title">Tu cuerpo,<br>tu <em>poder</em></h1>
+        <p class="lede">Tecnología estética de alta gama y rituales de bienestar, en un templo pensado para volver a ti.</p>
+      </div>
+      <div class="hero__media" data-reveal>
+        <div class="ph ph--portrait"><span class="ph__tag">tu ritual empieza aquí</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Reductor y tonificación</span><span>·</span><span>Cavitación</span><span>·</span><span>Radiofrecuencia</span><span>·</span><span>Alta frecuencia</span><span>·</span><span>Ultrasonido</span><span>·</span><span>HIFEM Sculpt</span><span>·</span><span>Peeling ultrasónico</span><span>·</span><span>Máscara LED</span><span>·</span><span>Drenaje linfático</span><span>·</span>
+      <span>Reductor y tonificación</span><span>·</span><span>Cavitación</span><span>·</span><span>Radiofrecuencia</span><span>·</span><span>Alta frecuencia</span><span>·</span><span>Ultrasonido</span><span>·</span><span>HIFEM Sculpt</span><span>·</span><span>Peeling ultrasónico</span><span>·</span><span>Máscara LED</span><span>·</span><span>Drenaje linfático</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- HIFEM -->
+  <section class="hifem" id="hifem">
+    <div class="wrap">
+      <div class="hifem__card" data-reveal>
+        <div class="hifem__glow" aria-hidden="true"></div>
+        <div class="hifem__body">
+          <p class="eyebrow eyebrow--gold">⚡ Ritual Sculpt · El tratamiento estrella</p>
+          <h2 class="hifem__title">HIFEM Sculpt</h2>
+          <p class="hifem__promise">Levanta y aumenta glúteos o tonifica y reduce el abdomen.</p>
+          <div class="hifem__desc">
+            <p>Última tecnología que emite ondas que penetran hasta el músculo, contrayéndolo profundamente <strong>30.000 veces en 30 minutos</strong>, logrando tonificar, definir y aumentar de verdad.</p>
+            <p>Finaliza con <strong>drenaje linfático</strong> o <strong>masaje de levantamiento</strong>, para desinflamar y potenciar el resultado.</p>
+          </div>
+          <p class="hifem__meta">⏱️ Duración total: <strong>1 hora</strong></p>
+
+          <div class="hifem__incluye">
+            <figure class="hifem__photo">
+              <picture>
+                <source srcset="assets/img/hifem.webp" type="image/webp">
+                <img src="assets/img/hifem.jpg" alt="Sesión de HIFEM Sculpt en Solessa Spa" width="600" height="800" loading="lazy">
+              </picture>
+            </figure>
+            <div class="hifem__incluye-text">
+              <h3>Tu ritual incluye</h3>
+              <ul>
+                <li>Limpieza energética de pies con sales</li>
+                <li>Masaje de pies relajante</li>
+                <li>Aromaterapia</li>
+                <li>Hidratación de labios o mascarilla facial</li>
+                <li>Fruta y bebida</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hifem__price">
+            <span class="hifem__promo-badge">Promoción · válida hasta el 1 de septiembre</span>
+            <ul>
+              <li><span class="pl">1 sesión</span> <span class="pv"><s>$180.000</s> $150.000</span></li>
+              <li><span class="pl">4 sesiones</span> <span class="pv"><s>$600.000</s> $500.000</span></li>
+            </ul>
+          </div>
+
+          <a class="btn btn--gold" data-wa data-msg="Hola, quiero agendar mi Ritual Sculpt (HIFEM). ¿Me cuentas sobre la promoción?" href="#">Quiero mi Ritual Sculpt →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <section class="cat" id="tratamientos">
+    <div class="wrap">
+      <hr class="rule" aria-hidden="true">
+      <header class="cat__head" data-reveal>
+        <p class="eyebrow">Carta de tratamientos</p>
+        <h2 class="cat__title">Nuestros tratamientos</h2>
+        <p class="cat__sub">Tecnología de alta gama para cuerpo y rostro.</p>
+      </header>
+
+      <!-- ▸ CORPORAL -->
+      <h3 class="cat__group" data-reveal>Corporal</h3>
+      <div class="cat__intro-block" data-reveal>
+        <p class="eyebrow">Última tecnología</p>
+      </div>
+      <ol class="techlist">
+        <li class="techlist__item" data-reveal>
+          <span class="techlist__n">01</span>
+          <div class="techlist__body">
+            <h4>Cavitación</h4>
+            <p>Disminuye la grasa localizada · Reduce medidas · Moldea el cuerpo</p>
+          </div>
+        </li>
+        <li class="techlist__item" data-reveal>
+          <span class="techlist__n">02</span>
+          <div class="techlist__body">
+            <h4>Radiofrecuencia</h4>
+            <p>Reafirma la piel · Disminuye la flacidez · Estimula la producción de colágeno</p>
+          </div>
+        </li>
+        <li class="techlist__item" data-reveal>
+          <span class="techlist__n">03</span>
+          <div class="techlist__body">
+            <h4>Gimnasia pasiva</h4>
+            <p>Estimula el músculo · Favorece la circulación · Tonifica el cuerpo</p>
+          </div>
+        </li>
+        <li class="techlist__item" data-reveal>
+          <span class="techlist__n">04</span>
+          <div class="techlist__body">
+            <h4>Lipólisis láser</h4>
+            <p>Rompe la grasa localizada · Reduce medidas · Moldea y define</p>
+          </div>
+        </li>
+        <li class="techlist__item" data-reveal>
+          <span class="techlist__n">05</span>
+          <div class="techlist__body">
+            <h4>Vacumterapia</h4>
+            <p>Levanta y reafirma los glúteos · Activa la circulación · Reduce la celulitis</p>
+          </div>
+        </li>
+        <li class="techlist__item" data-reveal>
+          <span class="techlist__n">06</span>
+          <div class="techlist__body">
+            <h4>Crioterapia</h4>
+            <p>Reafirma y tonifica · Reduce grasa localizada · Desinflama</p>
+          </div>
+        </li>
+      </ol>
+
+      <!-- ▸ RITUALES (combos) -->
+      <div class="ritualsband" data-reveal>
+        <h3>Rituales</h3>
+        <p>Planes diseñados para tu objetivo</p>
+      </div>
+      <article class="card card--silueta" data-reveal tabindex="0" role="button"
+        data-name="Ritual Silueta" data-cat="Plan corporal">
+        <div class="card__head"><h3>Ritual Silueta</h3></div>
+        <div class="card__body">
+          <p class="card__summary">Reduce, moldea y tonifica <strong>abdomen y laterales</strong> combinando todas nuestras tecnologías.</p>
+          <p class="card__summary">Cada sesión incluye <strong>drenaje linfático + masaje reductor</strong>.</p>
+          <p class="card__plans">Planes de 4 o 10 sesiones</p>
+          <p class="card__month">Para usar en 1 mes</p>
+          <span class="card__cta">Ver planes →</span>
+        </div>
+        <div class="card__detail" hidden>
+          <div class="mt">
+            <div class="mt__tier">
+              <p class="mt__name">Esencial</p>
+              <p class="mt__ses">4 sesiones</p>
+              <ul>
+                <li>2 · Cavitación + Radiofrecuencia</li>
+                <li>1 · Lipólisis láser</li>
+                <li>1 · HIFEM (tonificación)</li>
+                <li>4 · Drenaje linfático + masaje reductor</li>
+              </ul>
+              <p class="mt__price">$350.000</p>
+            </div>
+
+            <div class="mt__tier mt__tier--star">
+              <span class="mt__badge">El más elegido</span>
+              <p class="mt__name">Completo</p>
+              <p class="mt__ses">10 sesiones</p>
+              <ul>
+                <li>4 · Cavitación + Radiofrecuencia</li>
+                <li>4 · Lipólisis láser</li>
+                <li>2 · HIFEM (tonificación)</li>
+                <li>10 · Drenaje linfático + masaje reductor</li>
+              </ul>
+              <p class="mt__price">$700.000</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ▸ RITUAL GLÚTEOS · paquete -->
+      <article class="card card--silueta" data-reveal tabindex="0" role="button"
+        data-name="Ritual Glúteos" data-cat="Plan corporal">
+        <div class="card__head"><h3>Ritual Glúteos</h3></div>
+        <div class="card__body">
+          <p class="card__summary">Levanta, aumenta y tonifica tus <strong>glúteos</strong> combinando HIFEM, gimnasia pasiva, vacumterapia y crioterapia.</p>
+          <p class="card__summary">Con <strong>masaje de levantamiento</strong> en cada sesión.</p>
+          <p class="card__plans">Planes de 4 o 8 sesiones</p>
+          <p class="card__month">Para usar en 1 mes</p>
+          <span class="card__cta">Ver planes →</span>
+        </div>
+        <div class="card__detail" hidden>
+          <div class="mt">
+            <div class="mt__tier">
+              <p class="mt__name">Esencial</p>
+              <p class="mt__ses">4 sesiones</p>
+              <ul>
+                <li>2 · HIFEM</li>
+                <li>2 · Gimnasia pasiva</li>
+                <li>2 · Vacumterapia</li>
+                <li>2 · Crioterapia</li>
+                <li>4 · Masaje de levantamiento</li>
+              </ul>
+              <p class="mt__price">$700.000</p>
+            </div>
+
+            <div class="mt__tier mt__tier--star">
+              <span class="mt__badge">El más elegido</span>
+              <p class="mt__name">Completo</p>
+              <p class="mt__ses">8 sesiones</p>
+              <ul>
+                <li>4 · HIFEM</li>
+                <li>4 · Gimnasia pasiva</li>
+                <li>4 · Vacumterapia</li>
+                <li>4 · Crioterapia</li>
+                <li>8 · Masaje de levantamiento</li>
+              </ul>
+              <p class="mt__price">$1.200.000</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ▸ FACIAL -->
+      <h3 class="cat__group" data-reveal>Facial</h3>
+      <section class="facial" data-reveal>
+        <div class="facial__hero">
+          <div class="facialslides" aria-hidden="true">
+            <img src="assets/img/facial-1.jpg" alt="" width="1000" height="667" loading="lazy">
+            <img src="assets/img/facial-2.jpg" alt="" width="1000" height="667" loading="lazy">
+            <img src="assets/img/facial-3.jpg" alt="" width="1000" height="667" loading="lazy">
+            <img src="assets/img/facial-4.jpg" alt="" width="1000" height="667" loading="lazy">
+            <img src="assets/img/facial-5.jpg" alt="" width="1000" height="667" loading="lazy">
+          </div>
+          <div class="facial__heroText">
+            <h4 class="facial__title">Ritual Facial</h4>
+            <p class="facial__sub">Detox &amp; Hidratación</p>
+          </div>
+        </div>
+        <div class="facial__inner">
+          <p class="facial__lede">Facial con tecnología y mascarillas en 2 pasos.</p>
+          <div class="facial__phases">
+            <div class="facial__phase">
+              <span class="facial__ph">Detox</span>
+              <p>Limpieza profunda, exfoliación, vaporozono, scrubber ultrasónico, hidrodermoabrasión, alta frecuencia, máscara LED y mascarilla detox para purificar la piel a fondo.</p>
+            </div>
+            <div class="facial__phase">
+              <span class="facial__ph">Hidratación</span>
+              <p>Mascarilla hidroplástica, crioterapia y serum de luminosidad para nutrir, calmar y devolver el brillo — con productos certificados.</p>
+            </div>
+          </div>
+          <div class="pricetag">
+            <span class="pricetag__label">Precio con descuento</span>
+            <div class="pricetag__row">
+              <s>$150.000</s>
+              <strong>$130.000</strong>
+            </div>
+          </div>
+          <p class="price-note">Precio de lanzamiento · válido hasta el 1 de septiembre</p>
+          <a class="btn btn--gold facial__cta" data-wa data-msg="Hola, quiero agendar el Ritual Facial Detox e Hidratación." href="#">Agendar mi facial</a>
+        </div>
+      </section>
+
+      <!-- ▸ PETIT FACIAL -->
+      <article class="petit" data-reveal>
+        <div class="petit__inner">
+          <p class="eyebrow eyebrow--gold">Facial manual · sin aparatología</p>
+          <h4 class="petit__title">Petit Facial</h4>
+          <p class="petit__lede">Un facial 100 % a mano, sin máquinas. Limpieza suave, masaje de drenaje que descongestiona el rostro, yoga facial y mascarilla hidratante para relajar y devolver la frescura a tu piel.</p>
+          <p class="petit__tags">Limpieza · Drenaje facial · Yoga facial · Mascarilla hidratante</p>
+          <div class="pricetag">
+            <span class="pricetag__label">Promoción</span>
+            <div class="pricetag__row">
+              <s>$100.000</s>
+              <strong>$80.000</strong>
+            </div>
+          </div>
+          <a class="btn btn--gold petit__cta" data-wa data-msg="Hola, quiero agendar el Petit Facial." href="#">Agendar</a>
+        </div>
+      </article>
+
+      <!-- ▸ MASAJES -->
+      <h3 class="cat__group" data-reveal>Masajes</h3>
+      <div class="immersion" data-reveal>
+        <div class="immersion__glow" aria-hidden="true"></div>
+        <div class="immersion__inner">
+          <p class="immersion__ey">Ritual de inmersión</p>
+          <h4 class="immersion__title">Mente, Cuerpo <em>&amp;</em> Espíritu</h4>
+          <p class="immersion__lede">Inmersión sensorial para <strong>soltar, liberar y agradecer</strong>.</p>
+          <p class="immersion__lede2">Relajación profunda que reordena el cuerpo, mente y energía.</p>
+
+          <p class="immersion__steplabel">El viaje</p>
+          <div class="journey">
+            <div class="journey__move">
+              <span class="journey__word">Soltar</span>
+              <span class="journey__pos">La bienvenida · inmersión</span>
+              <p class="journey__text">Una aromaterapia de agradecimiento y un lavado de pies con sales para descargar lo que traes. Luego yoga facial, mascarilla hidroplástica, masaje craneal y drenaje de cuello para iniciar la inmersión neuronal.</p>
+            </div>
+            <div class="journey__move">
+              <span class="journey__word">Liberar</span>
+              <p class="journey__text">Reflexología y relajación muscular con tres presiones de masaje y estiramientos que liberan cada tensión.</p>
+            </div>
+            <div class="journey__move">
+              <span class="journey__word">Agradecer</span>
+              <p class="journey__text">Piedras volcánicas en la espalda, drenaje en ganglios y ejercicio de respiración.</p>
+            </div>
+          </div>
+
+          <a class="btn btn--gold immersion__cta" data-wa data-msg="Hola, quiero vivir el Ritual Mente, Cuerpo y Espíritu." href="#">Vivir la experiencia</a>
+        </div>
+      </div>
+
+      <!-- ▸ Masaje moldeador -->
+      <article class="moldea" data-reveal>
+        <div class="moldea__glow" aria-hidden="true"></div>
+        <div class="moldea__inner">
+          <p class="eyebrow eyebrow--gold">Masaje moldeador</p>
+          <h4 class="moldea__title">Moldeador de Abdomen</h4>
+          <p class="moldea__lede">El abdomen guarda más que grasa: guarda tensión, digestión y emociones. Un masaje que <strong>esculpe por fuera y libera por dentro</strong>.</p>
+          <div class="moldea__facets">
+            <div class="moldea__facet">
+              <span>Estético</span>
+              <p>Reduce medidas, define la cintura y reafirma.</p>
+            </div>
+            <div class="moldea__facet">
+              <span>Digestivo</span>
+              <p>Activa el colon, mejora la digestión y desinflama.</p>
+            </div>
+            <div class="moldea__facet">
+              <span>Emocional</span>
+              <p>Libera la tensión que guardas en el vientre, tu segundo cerebro.</p>
+            </div>
+          </div>
+          <a class="btn btn--gold moldea__cta" data-wa data-msg="Hola, quiero info del Masaje Moldeador de Abdomen." href="#">Agendar</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section class="exp" id="experiencia">
+    <div class="wrap exp__grid">
+      <div class="exp__media" data-reveal><div class="ph ph--square"><span class="ph__tag">el espacio</span></div></div>
+      <div class="exp__copy" data-reveal>
+        <p class="eyebrow">La experiencia Solessa</p>
+        <h2 class="exp__title">Un paréntesis para volver a ti</h2>
+        <p>Creemos en el cuidado como un ritual, no como una rutina. Cada sesión combina tecnología de vanguardia con manos expertas, en un ambiente sereno pensado para que el cuerpo y la mente respiren al mismo ritmo.</p>
+        <ul class="exp__list">
+          <li><strong>Atención personalizada</strong> — un plan diseñado para tus objetivos.</li>
+          <li><strong>Tecnología de alta gama</strong> — equipos certificados y seguros.</li>
+          <li><strong>Bienestar integral</strong> — estética y calma en un mismo lugar.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="gallery" id="espacio">
+    <div class="wrap">
+      <hr class="rule" aria-hidden="true">
+      <header class="cat__head" data-reveal>
+        <p class="eyebrow">El espacio</p>
+        <h2 class="cat__title">Diseñado para la calma</h2>
+      </header>
+      <div class="gallery__grid">
+        <button class="ph ph--g" data-lightbox aria-label="Ver foto del espacio 1"><span class="ph__tag">foto 1</span></button>
+        <button class="ph ph--g" data-lightbox aria-label="Ver foto del espacio 2"><span class="ph__tag">foto 2</span></button>
+        <button class="ph ph--g" data-lightbox aria-label="Ver foto del espacio 3"><span class="ph__tag">foto 3</span></button>
+        <button class="ph ph--g" data-lightbox aria-label="Ver foto del espacio 4"><span class="ph__tag">foto 4</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="wrap contact__grid">
+      <div class="contact__copy" data-reveal>
+        <p class="eyebrow eyebrow--gold">Reserva tu cita</p>
+        <h2 class="contact__title">Te esperamos en<br>Solessa Spa</h2>
+        <p class="lede">Agenda por WhatsApp y diseñamos juntas el ritual perfecto para ti.</p>
+        <a class="btn btn--gold" data-wa data-msg="Hola Solessa Spa, quiero agendar una cita." href="#">Agenda por WhatsApp</a>
+      </div>
+      <dl class="contact__info" data-reveal>
+        <div><dt>Dirección</dt><dd data-config="address">Barranquilla, Colombia</dd></div>
+        <div><dt>Horario</dt><dd data-config="hours">Lun – Sáb · 9:00 a.m. – 7:00 p.m.</dd></div>
+        <div><dt>WhatsApp</dt><dd><a data-wa data-config="phoneText" href="#">Escríbenos</a></dd></div>
+        <div><dt>Instagram</dt><dd><a data-config="instagram" data-config-href="instagramUrl" href="#" target="_blank" rel="noopener">@solessa.spa</a></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap foot__in">
+    <a class="brand" href="#inicio" aria-label="Solessa Spa — inicio" translate="no">
+      <img src="assets/img/logo-spa.png" alt="Solessa Spa" width="120" height="49" loading="lazy">
+    </a>
+    <p class="foot__tag">Estética y bienestar · Barranquilla, Colombia</p>
+    <div class="foot__social">
+      <a data-config-href="instagramUrl" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.2-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.3-.6.7-.8 1.2-.2.4-.3 1-.4 2.1C2.7 9.8 2.7 10.2 2.7 12s0 2.2.1 3.4c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.3.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.3.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-3.4s0-2.2-.1-3.4c-.1-1.1-.2-1.7-.4-2.1a3.3 3.3 0 0 0-.8-1.2 3.3 3.3 0 0 0-1.2-.8c-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 8a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Zm6.2-8.2a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0Z"/></svg>
+      </a>
+      <a data-wa href="#" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l4.9-1.3A10 10 0 1 0 12 2Z"/></svg>
+      </a>
+    </div>
+    <p class="foot__legal">© <span id="year">2026</span> <span translate="no">SOLESSA</span> · Bronceado y Spa — Barranquilla, Colombia.</p>
+  </div>
+</footer>
+
+<!-- MODAL DETALLE -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal__close" data-close aria-label="Cerrar">&times;</button>
+    <div class="modal__body">
+      <small class="modal__cat" id="modalCat"></small>
+      <h3 id="modalTitle"></h3>
+      <div id="modalDesc"></div>
+      <a class="btn btn--gold" id="modalWa" data-wa href="#">Agendar por WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" data-lbclose aria-label="Cerrar">&times;</button>
+  <div class="lightbox__stage"><div class="ph ph--lb"><span class="ph__tag" id="lbTag">foto</span></div></div>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

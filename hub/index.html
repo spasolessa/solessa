@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es" style="color-scheme:light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SOLESSA · Elige tu templo</title>
+<meta name="description" content="SOLESSA — dos templos: Bronceado brasileño y Spa de estética y bienestar en Barranquilla.">
+<meta name="theme-color" content="#EDB85F">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  a{color:inherit;text-decoration:none}
+  :root{--display:"Cormorant Garamond",serif;--ui:"Hanken Grotesk",system-ui,sans-serif;
+    --cafe:#5A3A20;--cafe-soft:#7C5634;--ease:cubic-bezier(.22,.61,.36,1)}
+  html,body{height:100%}
+  body{font-family:var(--ui);overflow:hidden;color:var(--cafe);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+
+  .hub{display:flex;height:100dvh;width:100%}
+  .side{position:relative;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:clamp(24px,5vw,48px);cursor:pointer;overflow:hidden;transition:flex .6s var(--ease)}
+  .side>*{position:relative;z-index:1}
+  .side__sun{position:absolute;width:min(66%,340px);opacity:.16;pointer-events:none;z-index:0}
+  .bronceado{background:linear-gradient(155deg,#F6D38C 0%,#EDB85F 48%,#E3A646 100%)}
+  .bronceado .side__sun{right:-8%;top:-6%;animation:spin 120s linear infinite}
+  .spa{background:linear-gradient(160deg,#F2ECE0 0%,#E6D9C1 100%)}
+  .spa .side__sun{left:-12%;bottom:-10%;opacity:.1;animation:spin 150s linear infinite reverse}
+
+  .tlabel{font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--cafe-soft);font-weight:700;margin-bottom:8px}
+  .label{font-family:var(--display);font-weight:700;font-size:clamp(46px,7vw,80px);line-height:1;letter-spacing:.01em;
+    color:var(--cafe);text-shadow:0 1px 0 rgba(255,250,240,.35),0 3px 10px rgba(74,46,24,.28)}
+  .desc{list-style:none;margin-top:18px;display:flex;flex-direction:column;align-items:center;color:var(--cafe-soft);font-weight:600;letter-spacing:.05em;font-size:clamp(12.5px,1.5vw,15px)}
+  .desc li{padding:7px 0}
+  .desc li+li{border-top:1px solid rgba(124,86,52,.24)}
+  .enter{margin-top:24px;display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--cafe);border-radius:999px;
+    padding:12px 26px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--cafe);transition:background .25s,color .25s}
+  .enter:hover{background:var(--cafe);color:#F6E9D4}
+  .badge{display:inline-block;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--cafe);
+    border:1px solid rgba(90,58,32,.5);border-radius:999px;padding:5px 13px;margin-bottom:14px}
+  .countdown{display:flex;gap:14px;margin-top:22px}
+  .cd-unit{display:flex;flex-direction:column;align-items:center;min-width:44px}
+  .cd-unit b{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.4vw,40px);line-height:1;color:var(--cafe);font-variant-numeric:tabular-nums}
+  .cd-unit span{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--cafe-soft);margin-top:5px}
+
+  @media (hover:hover) and (min-width:701px){
+    .hub:hover .side{flex:.9}
+    .hub:hover .side:hover{flex:1.22}
+  }
+  @media (max-width:700px){
+    .side{padding:26px 12px}
+    .label{font-size:clamp(21px,6.4vw,30px)}
+    .tlabel{font-size:10px;letter-spacing:.22em}
+    .desc{display:none}
+    .enter{padding:10px 15px;font-size:10.5px;letter-spacing:.1em}
+    .badge{font-size:9px;padding:4px 9px;letter-spacing:.16em;margin-bottom:10px}
+    .countdown{gap:6px;margin-top:16px}
+    .cd-unit{min-width:32px}
+    .cd-unit b{font-size:20px}
+    .cd-unit span{font-size:8.5px;letter-spacing:.08em}
+    .side__sun{width:min(95%,230px)}
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @media (prefers-reduced-motion:reduce){.side__sun{animation:none}.side,.soon-msg{transition:none}}
+</style>
+</head>
+<body>
+  <div class="hub">
+    <!-- TEMPLO 1 · BRONCEADO ( enlace: local para pruebas; cambiar a la URL real al desplegar) -->
+    <a class="side bronceado" href="../bronceado/">
+      <img class="side__sun" src="assets/img/sun.png" alt="" aria-hidden="true">
+      <p class="tlabel">Templo 1</p>
+      <h2 class="label">Bronceado</h2>
+      <ul class="desc">
+        <li>3 técnicas de bronceado</li>
+        <li>Exfoliación de cuerpo completo</li>
+        <li>Aclarado de vellitos</li>
+      </ul>
+      <span class="enter">Entrar →</span>
+    </a>
+
+    <!-- TEMPLO 2 · SPA -->
+    <a class="side spa" href="../spa/">
+      <img class="side__sun" src="assets/img/sun.png" alt="" aria-hidden="true">
+      <p class="tlabel">Templo 2</p>
+      <h2 class="label">Spa</h2>
+      <ul class="desc">
+        <li>Aparatología de última tecnología</li>
+        <li>Tratamientos reductores</li>
+        <li>Limpiezas faciales</li>
+        <li>Drenajes linfáticos y masajes</li>
+      </ul>
+      <span class="enter">Entrar →</span>
+    </a>
+  </div>
+</body>
+</html>
