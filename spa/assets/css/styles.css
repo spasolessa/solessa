@@ -253,7 +253,7 @@ section[id]{scroll-margin-top:clamp(76px,10vw,92px)}
   .techlist__item.open .techlist__body p{max-height:120px}
 }
 /* Ritual Silueta · tarjeta resumen */
-.ritualsband{margin-block:48px 30px;margin-inline:calc(50% - 50vw);width:100vw;
+.ritualsband{margin-block:48px 30px;margin-inline:calc(50% - 50vw);width:100vw;text-align:center;
   padding-block:clamp(28px,5vw,48px);
   padding-inline:max(var(--pad),calc((100vw - var(--maxw))/2 + var(--pad)));
   background:linear-gradient(135deg,var(--tinta),var(--tinta-2));
