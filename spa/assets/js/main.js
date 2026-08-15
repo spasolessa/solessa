@@ -129,4 +129,18 @@ function lightbox() {
   addEventListener("keydown", e => { if (e.key === "Escape" && lb.classList.contains("is-open")) close(); });
 }
 
-hydrate(); splash(); nav(); reveal(); modal(); lightbox();
+/* ---- Acordeón de tecnologías ---- */
+function techAccordion() {
+  const items = $$(".techlist__item");
+  if (!items.length) return;
+  items.forEach(it => {
+    it.setAttribute("tabindex", "0");
+    it.setAttribute("role", "button");
+    const toggle = () => it.classList.toggle("open");
+    it.addEventListener("click", toggle);
+    it.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
+  });
+  items[0].classList.add("open"); // el primero abierto para mostrar el patrón
+}
+
+hydrate(); splash(); nav(); reveal(); modal(); lightbox(); techAccordion();

@@ -232,18 +232,25 @@ section[id]{scroll-margin-top:clamp(76px,10vw,92px)}
 .cat__intro{color:var(--tinta-soft);font-size:15px;max-width:62ch;margin-top:7px}
 /* Índice editorial de tecnologías */
 .techlist{list-style:none;border-top:1px solid rgba(184,137,61,.28)}
-.techlist__item{display:flex;gap:20px;align-items:baseline;padding:20px 6px;
+.techlist__item{position:relative;display:flex;gap:18px;align-items:center;padding:15px 40px 15px 6px;cursor:pointer;
   border-bottom:1px solid rgba(184,137,61,.28);transition:padding-left .3s var(--ease),background .3s}
-.techlist__item:hover{padding-left:16px;background:linear-gradient(90deg,rgba(184,137,61,.09),transparent 70%)}
-.techlist__n{flex:none;min-width:54px;font-family:var(--display);font-style:italic;font-weight:500;
-  font-size:clamp(28px,4.4vw,44px);color:var(--oro);line-height:.9}
-.techlist__body h4{font-family:var(--display);font-weight:600;font-size:clamp(21px,2.6vw,28px);color:var(--tinta);line-height:1.05}
-.techlist__body p{color:var(--tinta-soft);font-size:14px;margin-top:5px;line-height:1.5}
+.techlist__item:hover{padding-left:14px;background:linear-gradient(90deg,rgba(184,137,61,.09),transparent 70%)}
+.techlist__item::after{content:"";position:absolute;right:12px;top:50%;width:9px;height:9px;
+  border-right:1.6px solid var(--oro);border-bottom:1.6px solid var(--oro);
+  transform:translateY(-70%) rotate(45deg);transition:transform .3s var(--ease)}
+.techlist__item.open::after{transform:translateY(-30%) rotate(-135deg)}
+.techlist__n{flex:none;min-width:50px;font-family:var(--display);font-style:italic;font-weight:500;
+  font-size:clamp(26px,4vw,40px);color:var(--oro);line-height:.9}
+.techlist__body h4{font-family:var(--display);font-weight:600;font-size:clamp(20px,2.5vw,27px);color:var(--tinta);line-height:1.05}
+.techlist__body p{color:var(--tinta-soft);font-size:14px;line-height:1.5;max-height:0;opacity:0;overflow:hidden;
+  transition:max-height .35s var(--ease),opacity .3s,margin-top .3s}
+.techlist__item.open .techlist__body p{max-height:80px;opacity:1;margin-top:6px}
 @media (max-width:640px){
-  .techlist__item{gap:14px;padding:16px 4px}
-  .techlist__n{min-width:40px;font-size:26px}
+  .techlist__item{gap:14px;padding:13px 34px 13px 4px}
+  .techlist__n{min-width:38px;font-size:25px}
   .techlist__body h4{font-size:19px}
-  .techlist__body p{font-size:12.5px;margin-top:4px}
+  .techlist__body p{font-size:12.5px}
+  .techlist__item.open .techlist__body p{max-height:120px}
 }
 /* Ritual Silueta · tarjeta resumen */
 .ritualsband{margin-block:48px 30px;margin-inline:calc(50% - 50vw);width:100vw;
