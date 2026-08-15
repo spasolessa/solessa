@@ -12,7 +12,7 @@
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{background:var(--cream);color:var(--cafe);font-family:var(--ui);font-size:16px;line-height:1.6;
-  -webkit-font-smoothing:antialiased;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+  -webkit-font-smoothing:antialiased;overflow-x:clip;-webkit-tap-highlight-color:transparent}
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   background:radial-gradient(60% 44% at 84% 2%,rgba(239,187,94,.34),transparent 60%),
             radial-gradient(50% 40% at 2% 98%,rgba(197,135,31,.12),transparent 55%)}
