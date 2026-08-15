@@ -6,7 +6,7 @@
    ============================================================ */
 const CONFIG = {
   whatsapp: "573228729010",
-  defaultMsg: "Hola Solessa Spa, quiero más información.",
+  defaultMsg: "Quiero reservar una cita en Solessa Spa",
   instagram: "@solessaclub",
   instagramUrl: "https://instagram.com/solessaclub",
   address: "Parque Comercial Las Dunas Open · Villa Campestre, Barranquilla",
@@ -90,7 +90,7 @@ function modal() {
     $("#modalCat").textContent = card.dataset.cat || "";
     $("#modalTitle").textContent = card.dataset.name || "";
     $("#modalDesc").innerHTML = ($(".card__detail", card)?.innerHTML || "").trim();
-    $("#modalWa").href = waLink(`Hola, quiero agendar: ${card.dataset.name}.`);
+    $("#modalWa").href = waLink(`Quiero el ${card.dataset.name}`);
     m.classList.add("is-open"); m.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
     lastFocus = document.activeElement; $(".modal__close", m).focus();
