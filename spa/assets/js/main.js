@@ -10,7 +10,7 @@ const CONFIG = {
   instagram: "@solessaclub",
   instagramUrl: "https://instagram.com/solessaclub",
   address: "Parque Comercial Las Dunas Open · Villa Campestre, Barranquilla",
-  hours: "Lun – Sáb · 8:00 a.m. – 5:00 p.m.",
+  hours: "Martes a domingo · 8:00 a.m. – 5:00 p.m.",
   phoneText: "Escríbenos",
   // Mundos SOLESSA — cambia cuando estén las URLs reales (ej. https://bronceado.solessa.com)
   worldBronceado: "../bronceado/",           // sitio Bronceado
