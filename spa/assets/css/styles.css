@@ -120,7 +120,7 @@ section[id]{scroll-margin-top:clamp(76px,10vw,92px)}
 
 /* HERO */
 .hero{position:relative;padding:clamp(48px,9vw,104px) 0 clamp(36px,6vw,64px)}
-.hero__grid{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(24px,5vw,56px);align-items:center}
+.hero__grid{display:grid;grid-template-columns:1fr;gap:clamp(24px,5vw,56px);align-items:center}
 .hero__glow{position:absolute;inset:0;pointer-events:none;
   background:radial-gradient(40% 50% at 76% 38%,rgba(203,164,94,.22),transparent 62%)}
 .seal{position:absolute;right:clamp(-60px,-3vw,-20px);top:6%;width:min(40vw,400px);
