@@ -439,7 +439,7 @@ section[id]{scroll-margin-top:clamp(76px,10vw,92px)}
 
 /* EXPERIENCIA */
 .exp{padding:clamp(40px,7vw,90px) 0}
-.exp__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.exp__grid{display:grid;grid-template-columns:1fr;gap:clamp(28px,5vw,64px);align-items:center;max-width:760px}
 .exp__title{font-family:var(--display);font-weight:500;font-size:clamp(30px,5vw,52px);line-height:1.02;margin:10px 0 16px;text-wrap:balance}
 .exp__copy p{color:var(--tinta-soft);max-width:52ch}
 .exp__list{list-style:none;margin-top:22px;display:grid;gap:12px}
