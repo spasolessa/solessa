@@ -157,7 +157,10 @@ section[id]{scroll-margin-top:clamp(76px,10vw,92px)}
   background:linear-gradient(135deg,var(--tinta),var(--tinta-2));padding:clamp(28px,5vw,64px)}
 .hifem__glow{position:absolute;right:-8%;top:-40%;width:55%;height:180%;pointer-events:none;
   background:radial-gradient(closest-side,rgba(203,164,94,.42),transparent 70%)}
-.hifem__body{position:relative;max-width:600px}
+.hifem__body{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,58px);align-items:center}
+.hifem__offer{min-width:0}
+@media (min-width:861px){.hifem__offer .hifem__incluye{border-top:0;padding-top:0;margin-top:0}}
+@media (max-width:860px){.hifem__body{grid-template-columns:1fr;max-width:600px}}
 .hifem__title{font-family:var(--display);font-weight:500;font-size:clamp(38px,6vw,68px);line-height:1;margin:10px 0 14px}
 .hifem__lede{color:rgba(240,233,221,.82);max-width:52ch}
 .hifem__points{list-style:none;display:flex;flex-wrap:wrap;gap:14px 30px;margin:22px 0 30px}
