@@ -527,3 +527,15 @@ section[id]{scroll-margin-top:clamp(76px,10vw,92px)}
   [data-reveal]{opacity:1;transform:none}
   .seal,.marquee__track{animation:none}
 }
+
+/* ── Planes visibles directo en la tarjeta (sin modal) ── */
+.card--silueta.card--open{cursor:default}
+.card--silueta.card--open:hover,
+.card--silueta.card--open:focus-visible{transform:none;box-shadow:none;border-color:var(--burgundy)}
+.card--silueta.card--open .card__cta{display:none}
+.card--silueta.card--open .card__body{padding-bottom:8px}
+.card--silueta.card--open .card__detail{display:block;padding:22px 26px 28px}
+.card--silueta.card--open .card__plans{color:var(--oro);font-weight:600}
+@media (max-width:640px){
+  .card--silueta.card--open .card__detail{padding:16px 20px 22px}
+}

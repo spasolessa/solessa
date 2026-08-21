@@ -100,6 +100,7 @@ function modal() {
     document.body.style.overflow = ""; lastFocus?.focus();
   };
   $$(".card").forEach(card => {
+    if (card.classList.contains("card--open")) return; // planes ya visibles en la tarjeta
     card.addEventListener("click", () => open(card));
     card.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(card); } });
   });
