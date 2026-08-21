@@ -144,4 +144,24 @@ function techAccordion() {
   items[0].classList.add("open"); // el primero abierto para mostrar el patrón
 }
 
-hydrate(); splash(); nav(); reveal(); modal(); lightbox(); techAccordion();
+function inlinePlanToggles() {
+  $$(".card--open").forEach(card => {
+    const star = $(".mt__tier--star", card);
+    const detail = $(".card__detail", card);
+    if (!star || !detail || $(".mt__toggle", card)) return;
+    const ses = ($(".mt__ses", star)?.textContent || "").trim(); // "8 sesiones"
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "mt__toggle";
+    const show = `Ver opción de ${ses} ▾`;
+    const hide = `Ocultar opción de ${ses} ▴`;
+    btn.textContent = show;
+    btn.addEventListener("click", () => {
+      const exp = card.classList.toggle("is-expanded");
+      btn.textContent = exp ? hide : show;
+    });
+    detail.appendChild(btn);
+  });
+}
+
+hydrate(); splash(); nav(); reveal(); modal(); lightbox(); techAccordion(); inlinePlanToggles();
