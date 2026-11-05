@@ -128,6 +128,29 @@ nav.is-open .nav__burger span:nth-child(3){transform:translateY(-7px) rotate(-45
 .star__points li{max-width:210px}
 .star__points b{display:block;font-family:var(--display);font-weight:500;font-style:italic;font-size:clamp(21px,2.5vw,27px);color:var(--sun);line-height:1.08}
 .star__points span{display:block;font-size:13px;color:rgba(248,239,219,.7);margin-top:5px}
+
+/* Ritual de Verano — badge, precio, vigencia */
+.star__badge{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#F3CD72,#DF9F38);color:#3a2410;
+  font-size:15px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;padding:11px 24px;border-radius:999px;
+  box-shadow:0 12px 28px -10px rgba(0,0,0,.55);margin-bottom:4px}
+.star__pricerow{display:flex;align-items:center;gap:15px;margin:14px 0 12px}
+.star__amount{font-family:var(--ui);font-weight:800;font-size:clamp(46px,6.6vw,66px);color:#fff;line-height:.82;letter-spacing:-.02em}
+.star__amount-lbl{font-size:15px;line-height:1.08;letter-spacing:.14em;text-transform:uppercase;color:var(--sun);font-weight:800}
+.star__valid{display:inline-flex;align-items:center;gap:9px;font-size:15px;color:#fff;font-weight:700;
+  background:rgba(0,0,0,.28);border:1px solid rgba(239,187,94,.55);border-radius:999px;padding:9px 20px}
+.star__valid::before{content:"⏳";font-size:15px}
+
+/* Ritual de Verano — incluye + elige */
+.star__includes{display:flex;align-items:baseline;gap:10px;margin:20px 0 2px;font-size:16px;color:rgba(248,239,219,.9)}
+.star__includes .k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sun);font-weight:800;flex:none}
+.star__includes b{color:#fff;font-weight:700}
+.star__choose-label{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sun);font-weight:800;margin:18px 0 11px}
+.star__choose{display:flex;align-items:stretch;gap:14px;margin-bottom:28px;max-width:600px}
+.star__choose .opt{flex:1;border:1px solid rgba(239,187,94,.45);border-radius:13px;padding:15px 18px;background:rgba(0,0,0,.16)}
+.star__choose .opt .ok{display:block;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(248,239,219,.6);font-weight:800;margin-bottom:6px}
+.star__choose .opt b{display:block;font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(21px,2.4vw,25px);color:var(--sun);line-height:1.04}
+.star__choose .opt .od{display:block;font-size:14px;color:rgba(248,239,219,.85);margin-top:4px}
+.star__choose .oor{align-self:center;font-family:var(--display);font-style:italic;font-size:21px;color:rgba(248,239,219,.55);flex:none}
 @media (max-width:820px){
   .star{padding:24px 0}
   .star__card{grid-template-columns:1fr 108px;gap:12px;padding:14px;align-items:center}
@@ -136,6 +159,21 @@ nav.is-open .nav__burger span:nth-child(3){transform:translateY(-7px) rotate(-45
   .star__price{font-size:16px}
   .star__lede{font-size:11.5px;margin-top:5px;line-height:1.38}
   .star__points{display:none}
+  .star__badge{font-size:8.5px;padding:5px 12px;letter-spacing:.14em;gap:5px}
+  .star__pricerow{gap:8px;margin:5px 0 6px}
+  .star__amount{font-size:28px}
+  .star__amount-lbl{font-size:8.5px}
+  .star__valid{font-size:9px;padding:4px 10px;gap:5px}
+  .star__valid::before{font-size:9px}
+  .star__includes{font-size:11.5px;margin:7px 0 0;gap:6px}
+  .star__includes .k{font-size:8px;letter-spacing:.16em}
+  .star__choose-label{font-size:9px;margin:8px 0 5px}
+  .star__choose{flex-direction:column;gap:6px;margin-bottom:8px}
+  .star__choose .opt{padding:7px 9px;border-radius:8px}
+  .star__choose .opt .ok{font-size:8px;margin-bottom:2px}
+  .star__choose .opt b{font-size:14px}
+  .star__choose .opt .od{font-size:10.5px}
+  .star__choose .oor{display:none}
   .star__card .btn{margin-top:11px;padding:9px 12px;font-size:11px}
   .star__photo{min-height:0;aspect-ratio:3/4;max-width:108px;padding:5px;border-radius:10px;align-self:center}
   .star__photo picture,.star__photo img{border-radius:6px}
